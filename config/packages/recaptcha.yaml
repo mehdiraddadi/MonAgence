@@ -1,0 +1,5 @@
+recaptcha:
+  key: '6Lc1Cr4ZAAAAAAue-GH3FIxPX7v2XxbjB_ga3z3C'
+#  key: '%env(GOOGLE_RECAPTCHA_KEY)%'
+  secret: '6Lc1Cr4ZAAAAAGp8On6cktJssOw3P73fj8D_xO5L'
+#  secret: '%env(GOOGLE_RECAPTCHA_SECRET)%'
