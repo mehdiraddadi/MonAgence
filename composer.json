@@ -11,6 +11,7 @@
         "doctrine/annotations": "^1.10",
         "doctrine/doctrine-migrations-bundle": "^3.0",
         "doctrine/orm": "^2.7",
+        "google/recaptcha": "^1.2",
         "knplabs/knp-paginator-bundle": "^5.3",
         "liip/imagine-bundle": "^2.3",
         "sensio/framework-extra-bundle": "^5.5",
@@ -29,9 +30,9 @@
         "symfony/validator": "4.4.*",
         "symfony/webpack-encore-bundle": "^1.7",
         "symfony/yaml": "4.4.*",
+        "twig/cache-extension": "^1.4@dev",
         "twig/extra-bundle": "^2.12|^3.0",
-        "vich/uploader-bundle": "^1.15",
-        "twig/cache-extension": "^1.4@dev"
+        "vich/uploader-bundle": "^1.15"
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.3",
