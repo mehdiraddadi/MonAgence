@@ -52,9 +52,24 @@ return [
                     .')'
                 .')'
                 .'|/biens/([a-z0-9\\-]*)\\-([^/]++)(*:306)'
+                .'|/v1/api(?'
+                    .'|(?:/(index)(?:\\.([^/]++))?)?(*:352)'
+                    .'|/(?'
+                        .'|docs(?:\\.([^/]++))?(*:383)'
+                        .'|contexts/(.+)(?:\\.([^/]++))?(*:419)'
+                        .'|properties(?'
+                            .'|(?:\\.([^/]++))?(?'
+                                .'|(*:458)'
+                            .')'
+                            .'|/([^/\\.]++)(?:\\.([^/]++))?(?'
+                                .'|(*:496)'
+                            .')'
+                        .')'
+                    .')'
+                .')'
                 .'|/media/cache/resolve/(?'
-                    .'|([A-z0-9_-]*)/rc/([^/]++)/(.+)(*:368)'
-                    .'|([A-z0-9_-]*)/(.+)(*:394)'
+                    .'|([A-z0-9_-]*)/rc/([^/]++)/(.+)(*:562)'
+                    .'|([A-z0-9_-]*)/(.+)(*:588)'
                 .')'
             .')/?$}sD',
     ],
@@ -74,8 +89,21 @@ return [
             [['_route' => 'admin.property.edit', '_controller' => 'App\\Controller\\Admin\\AdminPropertyController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, true, null],
         ],
         306 => [[['_route' => 'property.show', '_controller' => 'App\\Controller\\PropertyController::show'], ['slug', 'id'], null, null, false, true, null]],
-        368 => [[['_route' => 'liip_imagine_filter_runtime', '_controller' => 'Liip\\ImagineBundle\\Controller\\ImagineController::filterRuntimeAction'], ['filter', 'hash', 'path'], ['GET' => 0], null, false, true, null]],
-        394 => [
+        352 => [[['_route' => 'api_entrypoint', '_controller' => 'api_platform.action.entrypoint', '_format' => '', '_api_respond' => 'true', 'index' => 'index'], ['index', '_format'], null, null, false, true, null]],
+        383 => [[['_route' => 'api_doc', '_controller' => 'api_platform.action.documentation', '_format' => '', '_api_respond' => 'true'], ['_format'], null, null, false, true, null]],
+        419 => [[['_route' => 'api_jsonld_context', '_controller' => 'api_platform.jsonld.action.context', '_format' => 'jsonld', '_api_respond' => 'true'], ['shortName', '_format'], null, null, false, true, null]],
+        458 => [
+            [['_route' => 'api_properties_get_collection', '_controller' => 'api_platform.action.get_collection', '_format' => null, '_api_resource_class' => 'App\\Entity\\Property', '_api_collection_operation_name' => 'get'], ['_format'], ['GET' => 0], null, false, true, null],
+            [['_route' => 'api_properties_post_collection', '_controller' => 'api_platform.action.post_collection', '_format' => null, '_api_resource_class' => 'App\\Entity\\Property', '_api_collection_operation_name' => 'post'], ['_format'], ['POST' => 0], null, false, true, null],
+        ],
+        496 => [
+            [['_route' => 'api_properties_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Property', '_api_item_operation_name' => 'get'], ['id', '_format'], ['GET' => 0], null, false, true, null],
+            [['_route' => 'api_properties_delete_item', '_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Property', '_api_item_operation_name' => 'delete'], ['id', '_format'], ['DELETE' => 0], null, false, true, null],
+            [['_route' => 'api_properties_put_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Property', '_api_item_operation_name' => 'put'], ['id', '_format'], ['PUT' => 0], null, false, true, null],
+            [['_route' => 'api_properties_patch_item', '_controller' => 'api_platform.action.patch_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Property', '_api_item_operation_name' => 'patch'], ['id', '_format'], ['PATCH' => 0], null, false, true, null],
+        ],
+        562 => [[['_route' => 'liip_imagine_filter_runtime', '_controller' => 'Liip\\ImagineBundle\\Controller\\ImagineController::filterRuntimeAction'], ['filter', 'hash', 'path'], ['GET' => 0], null, false, true, null]],
+        588 => [
             [['_route' => 'liip_imagine_filter', '_controller' => 'Liip\\ImagineBundle\\Controller\\ImagineController::filterAction'], ['filter', 'path'], ['GET' => 0], null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

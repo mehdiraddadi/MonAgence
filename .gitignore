@@ -21,3 +21,7 @@ yarn-error.log
 /docker/logs
 ###< symfony/webpack-encore-bundle ###
 /docker/database/data/
+/src/vendor/
+/src/node_modules/
+/src/var/cache/
+/src/var/log/

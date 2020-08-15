@@ -9,9 +9,9 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
@@ -23,8 +23,13 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
     );
 
     public static $prefixLengthsPsr4 = array (
+        'p' => 
+        array (
+            'phpDocumentor\\Reflection\\' => 25,
+        ),
         'W' => 
         array (
+            'Webmozart\\Assert\\' => 17,
             'Webimpress\\SafeWriter\\' => 22,
         ),
         'V' => 
@@ -52,6 +57,7 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
             'Symfony\\Contracts\\EventDispatcher\\' => 34,
             'Symfony\\Contracts\\Cache\\' => 24,
             'Symfony\\Component\\Yaml\\' => 23,
+            'Symfony\\Component\\WebLink\\' => 26,
             'Symfony\\Component\\VarExporter\\' => 30,
             'Symfony\\Component\\VarDumper\\' => 28,
             'Symfony\\Component\\Validator\\' => 28,
@@ -59,11 +65,13 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
             'Symfony\\Component\\Templating\\' => 29,
             'Symfony\\Component\\String\\' => 25,
             'Symfony\\Component\\Stopwatch\\' => 28,
+            'Symfony\\Component\\Serializer\\' => 29,
             'Symfony\\Component\\Security\\Http\\' => 32,
             'Symfony\\Component\\Security\\Guard\\' => 33,
             'Symfony\\Component\\Security\\Csrf\\' => 32,
             'Symfony\\Component\\Security\\Core\\' => 32,
             'Symfony\\Component\\Routing\\' => 26,
+            'Symfony\\Component\\PropertyInfo\\' => 31,
             'Symfony\\Component\\PropertyAccess\\' => 33,
             'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\OptionsResolver\\' => 34,
@@ -75,6 +83,7 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
             'Symfony\\Component\\Form\\' => 23,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\Filesystem\\' => 29,
+            'Symfony\\Component\\ExpressionLanguage\\' => 37,
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\Dotenv\\' => 25,
@@ -101,11 +110,17 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'Psr\\Link\\' => 9,
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
             'ProxyManager\\' => 13,
             'PhpParser\\' => 10,
             'PackageVersions\\' => 16,
+        ),
+        'N' => 
+        array (
+            'Nelmio\\CorsBundle\\' => 18,
+            'Negotiation\\' => 12,
         ),
         'M' => 
         array (
@@ -133,6 +148,7 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
         ),
         'F' => 
         array (
+            'Fig\\Link\\' => 9,
             'Faker\\' => 6,
         ),
         'E' => 
@@ -168,10 +184,21 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
         array (
             'App\\Tests\\' => 10,
             'App\\' => 4,
+            'ApiPlatform\\Core\\' => 17,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'phpDocumentor\\Reflection\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+        ),
+        'Webmozart\\Assert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
         'Webimpress\\SafeWriter\\' => 
         array (
             0 => __DIR__ . '/..' . '/webimpress/safe-writer/src',
@@ -244,6 +271,10 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
+        'Symfony\\Component\\WebLink\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/web-link',
+        ),
         'Symfony\\Component\\VarExporter\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-exporter',
@@ -272,6 +303,10 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
         array (
             0 => __DIR__ . '/..' . '/symfony/stopwatch',
         ),
+        'Symfony\\Component\\Serializer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/serializer',
+        ),
         'Symfony\\Component\\Security\\Http\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/security-http',
@@ -291,6 +326,10 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
         'Symfony\\Component\\Routing\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/routing',
+        ),
+        'Symfony\\Component\\PropertyInfo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/property-info',
         ),
         'Symfony\\Component\\PropertyAccess\\' => 
         array (
@@ -335,6 +374,10 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
         'Symfony\\Component\\Filesystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/filesystem',
+        ),
+        'Symfony\\Component\\ExpressionLanguage\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/expression-language',
         ),
         'Symfony\\Component\\EventDispatcher\\' => 
         array (
@@ -416,6 +459,10 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'Psr\\Link\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/link/src',
+        ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
@@ -435,6 +482,14 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
         'PackageVersions\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/package-versions-deprecated/src/PackageVersions',
+        ),
+        'Nelmio\\CorsBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nelmio/cors-bundle',
+        ),
+        'Negotiation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/willdurand/negotiation/src/Negotiation',
         ),
         'Metadata\\' => 
         array (
@@ -471,6 +526,10 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
         'Grafikart\\RecaptchaBundle\\' => 
         array (
             0 => __DIR__ . '/../..' . '/lib/RecaptchaBundle',
+        ),
+        'Fig\\Link\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fig/link-util/src',
         ),
         'Faker\\' => 
         array (
@@ -566,6 +625,10 @@ class ComposerStaticInit466fde1d7fc1aadd62b8eba2167bc7b7
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'ApiPlatform\\Core\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/api-platform/core/src',
         ),
     );
 

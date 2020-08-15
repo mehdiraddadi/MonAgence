@@ -126,7 +126,7 @@ class __TwigTemplate_dce74d6d5e5789d7211fd853799c0aeb84cefb51e96e5df7733eaac98da
         if (twig_test_empty(twig_get_attribute($this->env, $this->source, (isset($context["property"]) || array_key_exists("property", $context) ? $context["property"] : (function () { throw new RuntimeError('Variable "property" does not exist.', 24, $this->source); })()), "pictures", [], "any", false, false, false, 24))) {
             // line 25
             echo "                            <img src=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Liip\ImagineBundle\Templating\FilterExtension']->filter("/images/properties/empty.jpg", "medium"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Liip\ImagineBundle\Templating\FilterExtension']->filter("./images/properties/empty.jpg", "medium"), "html", null, true);
             echo "\" alt=\"card-img-top\" style=\"width: 100%; height:auto;\">
                         ";
         } else {
@@ -341,7 +341,7 @@ class __TwigTemplate_dce74d6d5e5789d7211fd853799c0aeb84cefb51e96e5df7733eaac98da
                 <div class=\"col-md-8\">
                     <div data-slider>
                         {% if property.pictures is empty %}
-                            <img src=\"{{ '/images/properties/empty.jpg' | imagine_filter('medium') }}\" alt=\"card-img-top\" style=\"width: 100%; height:auto;\">
+                            <img src=\"{{ './images/properties/empty.jpg' | imagine_filter('medium') }}\" alt=\"card-img-top\" style=\"width: 100%; height:auto;\">
                         {% else %}
                             {% for picture in property.pictures %}
                                 <img src=\"{{ vich_uploader_asset(picture, 'imageFile') | imagine_filter('medium') }}\" alt=\"card-img-top\" style=\"width: 100%; height:auto;\">

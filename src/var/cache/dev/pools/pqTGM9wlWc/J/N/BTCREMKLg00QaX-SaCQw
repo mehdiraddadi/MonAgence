@@ -4,6 +4,7 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
     $o = [
         clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
         clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
     ],
     null,
     [
@@ -19,11 +20,15 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                     'Default',
                 ],
             ],
+            'iri' => [
+                2 => 'http://schema.org/Property',
+            ],
         ],
     ],
     [
         $o[0],
         $o[1],
+        $o[2],
     ],
     []
 ); }];
